@@ -17,6 +17,7 @@
             $('#num_public_repos .returned_data').append(data.public_repos);
             $('#num_followers .returned_data').append(data.followers);
             $('#num_following .returned_data').append(data.following);
+            $('#avatar_pic').append('<img src='+data.avatar_url+' width=\'300px\' height=\'300px\'/>');
             });
           };
     
