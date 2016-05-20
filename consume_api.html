@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Consuming GitHub's API</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src='consume_api.js'>
+          
+          
+        </script>
+    </head>
+
+    <body>
+        <div>
+          <p>Please enter the username of a user on GitHub that you want to know about.</p>
+          <input id='supply_username' type="text" placeholder="GitHub username...">
+          <button id='get_userdata'>Get user data</button>
+        </div>
+        <div id='user_data'>
+          
+            <p id="user_id">The user's ID is: <span class='returned_data'></span></p>
+            <p id="user_login">The login name is: <span class='returned_data'></span></p>
+            <p id='present_company'>The user's website is: <span class='returned_data'></span></p>
+            <p id="num_public_repos">The number of public repos this user has: <span class='returned_data'></span></p>
+            <p id="num_followers">The number of people following this user on GitHub: <span class='returned_data'></span></p>
+            <p id='num_following'>The number of people this user follows on GitHub: <span class='returned_data'></span></p>
+        </div>
+    </body>
+</html>
