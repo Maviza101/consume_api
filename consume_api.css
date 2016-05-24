@@ -1,3 +1,22 @@
 #loading_data_container {
   visibility: hidden;
 }
+
+#user_data {
+  display: none;
+}
+
+#avatar_pic_container {
+  border: 1px solid rgb(44,44,44);
+  border-radius: 5px;
+  width: 310px;
+  height: 310px;
+  
+}
+
+#avatar_pic_container #avatar_pic {
+  display: block;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 3px auto;
+}
