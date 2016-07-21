@@ -6,10 +6,15 @@
             $('.returned_data').empty();
             var userData = getUserData(username);
           });
-            
+          /*Note: you have to get your own client_id and client_secret from 
+          GitHub OAuth applications. The functional ones that were here before
+          have been deleted on GitHub and removed here, and the ones used here 
+          are obviously placeholders.*/
+          var clientId = 123
+          var clientSecret = 123
           function getUserData (user_url) {
             $.ajax({
-        url: "https://api.github.com/users/"+user_url+"?client_id=4b712b7ad083c6a941ff&client_secret=bff80cabc48a841004dc5eee29c4570fc93749af"
+        url: "https://api.github.com/users/"+user_url+"?client_id=" + clientId + "&client_secret=" + clientSecret
     }).then(function(data) {
             $('#user_id .returned_data').append(data.id);
             $('#user_login .returned_data').append(data.login);
